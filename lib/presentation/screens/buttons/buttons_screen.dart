@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class ButtonScreen extends StatelessWidget {
 
@@ -13,7 +14,23 @@ class ButtonScreen extends StatelessWidget {
         title: const Text('Buttons Screem'),
       ),
 
-      body:const Placeholder(),
+      body:const _ButtonsView(),
+      floatingActionButton: FloatingActionButton(
+        child: Icon(Icons.arrow_back_ios_new_rounded),
+        onPressed: (){
+
+        }
+        )
+        
     );
+  }
+}
+
+class _ButtonsView extends StatelessWidget {
+  const _ButtonsView();
+
+  @override
+  Widget build(BuildContext context) {
+    return const Placeholder();
   }
 }

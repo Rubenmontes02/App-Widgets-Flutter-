@@ -60,7 +60,7 @@ class _CustomListTile extends StatelessWidget {
       subtitle: Text(menuItem.title),
       onTap: (){
         
-        context.pushNamed(CardsScreen.name);
+        context.push(menuItem.link);
 
       },
     );
