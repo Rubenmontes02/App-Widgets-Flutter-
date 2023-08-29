@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class MenuItem{
 
   final String title;
-  final String subtitle;
+  final String subTitle;
   final String link;
   final IconData icon;
 
   
   const MenuItem({
     required this.title, 
-    required this.subtitle, 
+    required this.subTitle, 
     required this.link, 
     required this.icon
     });
@@ -23,21 +23,21 @@ const appMenuItems = <MenuItem>[
 
   MenuItem(
     title: 'Botones', 
-    subtitle: 'Varios botones en flutter', 
+    subTitle: 'Varios botones en flutter', 
     link: '/buttons', 
     icon: Icons.smart_button_outlined
     ),
 
   MenuItem(
     title: 'Tarjetas', 
-    subtitle: 'Un contenedor estetizado', 
+    subTitle: 'Un contenedor estetizado', 
     link: '/cards', 
     icon: Icons.credit_card
     ),
 
     MenuItem(
     title: 'ProgressIndicators', 
-    subtitle: 'Generales y controlados', 
+    subTitle: 'Generales y controlados', 
     link: '/progress', 
     icon: Icons.refresh_outlined
     ),
@@ -45,16 +45,24 @@ const appMenuItems = <MenuItem>[
 
     MenuItem(
     title: 'Snackbars y dialogos', 
-    subtitle: 'Indicadores en pantalla', 
+    subTitle: 'Indicadores en pantalla', 
     link: '/snackbar', 
     icon: Icons.info_outline_rounded
     ),
 
     MenuItem(
     title: 'Animated Container', 
-    subtitle: 'Stateful widget animated', 
+    subTitle: 'Stateful widget animated', 
     link: '/animated', 
     icon: Icons.check_box_outline_blank_outlined
     ),
+
+    MenuItem(
+    title: 'UI Controls', 
+    subTitle: 'Serie de controles de Flutter', 
+    link: '/ui-controls', 
+    icon: Icons.car_rental_outlined
+    ),
+
 
 ];
